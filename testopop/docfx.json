@@ -2,36 +2,23 @@
   "build": {
     "content": [
       {
-        "files": [
-          "**/*.md"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "testopop/**",
-          "**/includes/**"
-        ]
+        "files": [ "**/**.md" ],
+        "exclude": [ "**/obj/**" ]
       }
     ],
     "resource": [
       {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "testopop/**",
-          "**/includes/**"
-        ]
+        "files": [ "**/images/**", "**/**.html" ],
+        "exclude": [ "**/obj/**" ]
       }
     ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {},
-    "template": [
-      null
+    "globalMetadata": {
+      "ROBOTS": "NOINDEX, NOFOLLOW",
+      "ms.sitesec": "library"
+    },
+    "externalReference": [
     ],
-    "dest": "testopop"
+    "template": "op.html",
+    "dest": "/docs"
   }
 }
